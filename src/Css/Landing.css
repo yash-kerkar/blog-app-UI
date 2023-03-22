@@ -1,0 +1,132 @@
+.transition-opacity {
+    transition: transform 1000ms linear;
+  }
+
+  .opacity-0 {
+    transform: translateX(-100%);
+  }
+
+  .opacity-1 {
+    transform: translateX(0%);
+  }
+
+  .styleButton{
+  background: lightgrey;
+  border: none;
+  color: black;
+  width: 100%;
+  text-align: left;
+   
+  }
+
+  .styleButton:hover{
+    background-color: lightgrey;
+  }
+
+  .transition-opacity1 {
+    transition: transform 1000ms linear;
+  }
+
+  .opacity-01 {
+    transform: translateY(100%);
+  }
+
+  .opacity-11 {
+    transform: translateY(0);
+  }
+
+  .slide-enter{
+    opacity: 0;
+  }
+
+  .slide-enter.slide-enter-active{
+    opacity: 1;
+    transition:opacity 1000ms linear;
+  }
+
+  .slide-appear{
+    opacity:0;
+  }
+
+  .slide-appear.slide-appear-active{
+    opacity: 1;
+    transition: opacity 1000ms linear;
+  }
+
+  .background{
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+
+  .background1{
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: cover;
+    background-position: center center;  
+    background-attachment: fixed;
+  }
+
+.margin-fix{
+  margin-top: 4.6%;
+}
+
+@media screen and (max-width:550px) {
+  .margin-fix{
+    margin-top: 21%;
+  }
+}
+
+.homeTitle{
+  font-size: 90px;
+}
+
+.popularPost{
+  width: 62%;
+}
+
+.popularPost1{
+  width: 65%;
+}
+
+.popularPost2{
+  width: 60%;
+}
+
+.subscribe{
+  width:30%;
+  margin-top: -4.5%;
+}
+
+.blog{
+  width: 70%;
+}
+
+@media screen and (max-width:550px){
+  .homeTitle{
+    font-size: 40px;
+  }
+
+  .blog{
+    width: 90%;
+  }
+
+  .popularPost{
+    width: 100%;
+  }
+  .popularPost1{
+    width: 85%;
+  }
+
+  .popularPost2{
+    width:100%
+  }
+
+  .subscribe{
+    width:70%;
+    margin-top: -5.5%;
+  }
+}
+  
