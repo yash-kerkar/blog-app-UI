@@ -12,9 +12,11 @@ export const BlogsPageBackground = "background1.jpg";
 
 export const HomePageHeaderBG = "background.jpeg";
 
-export const profilePhoto = "profile.webp";
+export const profilePhoto = "profile.jpg";
 
 export const brand = "brand.png";
+
+export const defaultPostImage = "Default.jpg";
 
 export const myAxios = axios.create({
   baseURL: BASE_URL,

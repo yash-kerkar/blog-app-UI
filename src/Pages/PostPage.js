@@ -22,6 +22,7 @@ import { Comments } from "../Components/Comments";
 import { getComments } from "../Services/post-service";
 import { isLoggedIn } from "../Services/auth";
 import "../Css/Landing.css";
+import { defaultPostImage } from "../Services/helper";
 
 export const PostPage = () => {
   const { id } = useParams();
@@ -122,7 +123,7 @@ export const PostPage = () => {
                   src={
                     BASE_URL +
                     "post/image/" +
-                    (post.imageName ? post.imageName : "Default.webp")
+                    (post.imageName ? post.imageName : defaultPostImage)
                   }
                 ></img>
               </div>

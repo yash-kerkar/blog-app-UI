@@ -37,6 +37,7 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { getAllCategories, getCategory } from "../Services/category-service";
 import { toast } from "react-toastify";
 import { useInView } from "react-intersection-observer";
+import { defaultPostImage } from "../Services/helper";
 
 const Landing = () => {
   const [posts, setPosts] = useState(null);
@@ -106,7 +107,7 @@ const Landing = () => {
   }, [inView2]);
 
   useEffect(() => {
-    getAllposts(1, 5, "Date", "desc")
+    getAllposts(0, 5, "Date", "desc")
       .then((resp) => {
         setPosts(resp.content);
         let temp = [resp.content[0], resp.content[1]];
@@ -199,7 +200,7 @@ const Landing = () => {
                               "post/image/" +
                               (trending[0].imageName
                                 ? trending[0].imageName
-                                : "default.webp")
+                                : defaultPostImage)
                             }
                           ></CardImg>
                           <CardImgOverlay>
@@ -274,7 +275,7 @@ const Landing = () => {
                               "post/image/" +
                               (trending[1].imageName
                                 ? trending[1].imageName
-                                : "default.webp")
+                                : defaultPostImage)
                             }
                           ></CardImg>
                           <CardImgOverlay>
@@ -592,7 +593,7 @@ const Landing = () => {
                               "post/image/" +
                               (trending[0].imageName
                                 ? trending[0].imageName
-                                : "default.webp")
+                                : defaultPostImage)
                             }
                           ></CardImg>
                           <CardImgOverlay>
@@ -659,7 +660,7 @@ const Landing = () => {
                               "post/image/" +
                               (trending[1].imageName
                                 ? trending[1].imageName
-                                : "default.webp")
+                                : defaultPostImage)
                             }
                           ></CardImg>
                           <CardImgOverlay>

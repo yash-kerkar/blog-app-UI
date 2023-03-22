@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 import { BASE_URL } from "../Services/helper";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import "../Css/Landing.css";
+import { defaultPostImage } from "../Services/helper";
 
 export const Post = (props) => {
   return (
@@ -33,7 +34,7 @@ export const Post = (props) => {
               src={
                 BASE_URL +
                 "post/image/" +
-                (props.post.imageName ? props.post.imageName : "Default.webp")
+                (props.post.imageName ? props.post.imageName : defaultPostImage)
               }
               style={{
                 height: 180,
