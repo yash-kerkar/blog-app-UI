@@ -43,7 +43,7 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <ToastContainer />
       <Routes>
         <Route path="/" element={<Landing />}></Route>
